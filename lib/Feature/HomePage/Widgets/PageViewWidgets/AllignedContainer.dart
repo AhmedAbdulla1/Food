@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:akl/Feature/HomePage/Widgets/PageViewWidgets/ratingFood.dart';
 import 'package:akl/core/Controller/Controller.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
@@ -33,12 +33,7 @@ class AlignedContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Mytext(
-                  theText: networkInjection.response[index].name,
-                  textSize: 25,
-                  thisFontWeight: FontWeight.w400,
-                  textColour: mainBlackColor,
-                ),
+
                 // Make Stars Package.!
                 RatingFood(
                   index: index,

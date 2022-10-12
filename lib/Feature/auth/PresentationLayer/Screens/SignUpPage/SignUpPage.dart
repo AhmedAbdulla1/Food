@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:get/get.dart';
-import '../../HomePage/Screen/HomePage.dart';
-import '../Widgets/ImageLogo.dart';
-import '../Widgets/custom_buttons.dart';
-import '../Widgets/custom_text_form_field.dart';
+import '../../../../HomePage/Screen/HomePage.dart';
+import '../../../../../core/Widgets/image_logos.dart';
+import '../../../../../core/Widgets/custom_buttons.dart';
+import '../../../../../core/Widgets/custom_text_form_field.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class SignUpPage extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height:20),
-              const ImageLogo(),
+              const AuthLogo(),
               const SizedBox(height:20),
               CustomTextFormField(
                 hintText: AutofillHints.email,
@@ -49,14 +49,14 @@ class SignUpPage extends StatelessWidget {
                 },
               ),
               const SizedBox(height:10),
-              const Mytext(
-                theText: 'Have an Account ?',
-                textSize: 20,
+              CustomTitle(
+                text: 'Have an Account ?',
+                size: 20,
               ),
               const SizedBox(height:20),
-              const Mytext(
-                theText: 'Sign Up using one of the following methods',
-                textSize: 16,
+              CustomTitle(
+                text: 'Sign Up using one of the following methods',
+                size: 16,
               ),
               const SizedBox(height:20),
             ],

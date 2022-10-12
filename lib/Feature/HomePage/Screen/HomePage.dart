@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:akl/core/Controller/Controller.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
@@ -35,15 +35,15 @@ class HomePage extends StatelessWidget {
                 SizedBox(height:10),
                 Row(
                   children: [
-                    const Mytext(
-                      theText: "Popular .",
-                      textColour: mainBlackColor,
-                      textSize: 25,
+                    CustomTitle(
+                      text: "Popular .",
+                      color: mainBlackColor,
+                      size: 25,
                     ),
                     const SizedBox(height: 20,),
-                    const Mytext(
-                      theText: "Food pairing",
-                      textColour: textColor,
+                    CustomTitle(
+                      text: "Food pairing",
+                      color: textColor,
                     ),
                   ],
                 ),

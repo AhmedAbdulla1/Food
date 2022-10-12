@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/colors.dart';
 
 class RowofIcons extends StatelessWidget {
@@ -26,10 +26,7 @@ class RowofIcons extends StatelessWidget {
                 color: Colors.yellow,
               ),
               const SizedBox(height:5),
-              Mytext(
-                theText: readyOrNot,
-                textColour: textColor,
-              ),
+
             ],
           ),
           Row(
@@ -39,10 +36,6 @@ class RowofIcons extends StatelessWidget {
                 color: mainColor,
               ),
               const SizedBox(height:5),
-              Mytext(
-                theText: location,
-                textColour: textColor,
-              ),
             ],
           ),
           Row(
@@ -52,10 +45,7 @@ class RowofIcons extends StatelessWidget {
                 color: iconColor2,
               ),
               const SizedBox(height:5),
-              Mytext(
-                theText: timeToMakeFood,
-                textColour: textColor,
-              ),
+
             ],
           ),
         ],

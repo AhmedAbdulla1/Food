@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/colors.dart';
 
 import 'searchContainer.dart';
@@ -18,17 +18,14 @@ class CustomRow extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Mytext(
-                  theText: "Egypt",
-                  textColour: mainColor,
-                  textSize: 35,
+                CustomTitle(
+                  text: "Egypt",
+                  color: mainColor,
+                  size: 35,
                 ),
                 Row(
                   children: const [
-                    Mytext(
-                      theText: "6th of october city",
-                      textColour: textColor,
-                    ),
+
                     Icon(Icons.arrow_drop_down)
                   ],
                 )

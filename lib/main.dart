@@ -1,5 +1,5 @@
-import 'package:akl/Feature/auth/Screen/LoginPage.dart';
-import 'package:akl/Feature/auth/Screen/SignUpPage.dart';
+import 'package:akl/Feature/auth/PresentationLayer/Screens/SignInPage/SignInPage.dart';
+import 'package:akl/Feature/auth/PresentationLayer/Screens/SignUpPage/SignUpPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Feature/HomePage/Screen/HomePage.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       routes: {
         'SignUpPage':(context)=>const SignUpPage(),
-        'SignInPage':(context)=>const LoginPage() ,
+        'SignInPage':(context)=>const SignInPage() ,
         "HomePage": (context) => HomePage(),
       },
       debugShowCheckedModeBanner: false,

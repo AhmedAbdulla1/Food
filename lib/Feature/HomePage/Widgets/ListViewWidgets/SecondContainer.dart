@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:akl/Feature/HomePage/Widgets/bunchOfIcons.dart';
 import 'package:akl/core/Controller/Controller.dart';
-import 'package:akl/core/constant/TextWidget.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
@@ -31,15 +31,11 @@ class SecondContainer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Mytext(
-              theText: NetworkInjection.response[index].name,
-              textColour: mainBlackColor,
-              textSize: 20,
-            ),
+
             const SizedBox(height:20),
-            const Mytext(
-              theText: "With Chinese Characteristics",
-              textColour: textColor,
+            CustomTitle(
+              text: "With Chinese Characteristics",
+              color: textColor,
             ),
             const SizedBox(height:20),
             RowofIcons(

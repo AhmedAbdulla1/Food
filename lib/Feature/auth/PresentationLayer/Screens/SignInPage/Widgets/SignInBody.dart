@@ -1,37 +1,36 @@
+import 'package:akl/Feature/auth/PresentationLayer/Screens/SignUpPage/SignUpPage.dart';
+import 'package:akl/core/Widgets/custom_buttons.dart';
+import 'package:akl/core/Widgets/custom_text_form_field.dart';
+import 'package:akl/core/Widgets/image_logos.dart';
+import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:flutter/material.dart';
-import 'package:akl/core/constant/TextWidget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
-import '../Widgets/ImageLogo.dart';
-import '../Widgets/custom_buttons.dart';
-import '../Widgets/custom_text_form_field.dart';
-import 'SignUpPage.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+
+
+class SignInBody extends StatelessWidget {
+  const SignInBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
+    return Padding(
         padding: EdgeInsets.symmetric(horizontal: GetWidthinPixels(15)),
-        child: SafeArea(
           child: ListView(
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ImageLogo(),
-                  const Mytext(
-                    theText: "Hello",
-                    textSize: 50,
-                    thisFontWeight: FontWeight.bold,
+                  const AuthLogo(),
+                  CustomTitle(
+                    text: "Hello",
+                    size: 50,
                   ),
-                  const Mytext(
-                    theText: "Sign into your account",
-                    textSize: 20,
-                    textColour: textColor, // Error Hna fel Colour
+                  CustomSubTitle(
+                    text: "Sign into your account",
+                    size: 20,
+                    color: textColor, // Error Hna fel Colour
                   ),
                   const SizedBox(height: 10),
                   CustomTextFormField(
@@ -48,11 +47,11 @@ class LoginPage extends StatelessWidget {
                   Row(
                     //Row To but the child at mainِِAِِxisAlignment.end..
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
-                      Mytext(
-                        theText: "Sign into your account",
-                        textSize: 20,
-                        textColour: textColor, // Error Hna fel Colour
+                    children:  [
+                      CustomSubTitle(
+                        text: "Sign into your account",
+                        size: 20,
+                        color: textColor, // Error Hna fel Colour
                       ),
                     ],
                   ),
@@ -66,18 +65,17 @@ class LoginPage extends StatelessWidget {
                     // To put different colors of texts in a row..
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Mytext(
-                        theText: "Don't have an account?",
-                        textColour: textColor,
-                        textSize: 20,
+                      CustomSubTitle(
+                        text: "Don't have an account?",
+                        color: textColor,
+                        size: 20,
                       ),
                       InkWell(
                         onTap: () {
                           Get.to(const SignUpPage());
                         },
-                        child: const Mytext(
-                          theText: "Create",
-                          textSize: 20,
+                        child:const Text(
+                          "Create",
                         ),
                       ),
                     ],
@@ -86,8 +84,6 @@ class LoginPage extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
+      );
   }
 }
