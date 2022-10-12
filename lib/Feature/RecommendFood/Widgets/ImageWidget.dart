@@ -14,7 +14,7 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: GetWidth(),
-      height: GetHeightinPixels(300), // Height of Picture!.
+      height: GetHeightInPixels(300), // Height of Picture!.
       decoration: BoxDecoration(
         image: DecorationImage(
           image: NetworkImage(NetworkInjection.response[index].image),

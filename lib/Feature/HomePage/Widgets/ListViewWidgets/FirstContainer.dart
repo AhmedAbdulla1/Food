@@ -13,16 +13,16 @@ class FirstContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: GetWidthinPixels(150),
-      height: GetHeightinPixels(150),
+      width: GetWidthInPixels(150),
+      height: GetHeightInPixels(150),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(GetHeightinPixels(15)),
+        borderRadius: BorderRadius.circular(GetHeightInPixels(15)),
         image: DecorationImage(
           image: NetworkImage(networkInjection.response[index].image),
           fit: BoxFit.cover,
         ),
       ),
-      margin: EdgeInsets.only(bottom: GetHeightinPixels(10)),
+      margin: EdgeInsets.only(bottom: GetHeightInPixels(10)),
     );
   }
 }

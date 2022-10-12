@@ -5,6 +5,6 @@ class AuthLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Image.asset("Assets/Images/authLogo.png"));
+    return Center(child: Image.asset("assets/Images/authLogo.png"));
   }
 }

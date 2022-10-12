@@ -16,10 +16,10 @@ class DescContainer extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(
-            GetWidthinPixels(20),
+            GetWidthInPixels(20),
           ),
           topRight: Radius.circular(
-            GetWidthinPixels(20),
+            GetWidthInPixels(20),
           ),
         ),
       ),

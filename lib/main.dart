@@ -1,9 +1,8 @@
 import 'package:akl/Feature/auth/PresentationLayer/Screens/SignInPage/SignInPage.dart';
-import 'package:akl/Feature/auth/PresentationLayer/Screens/SignUpPage/SignUpPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Feature/HomePage/Screen/HomePage.dart';
-import 'core/Data/NetWorkFetching/NetworkFetching.dart';
+import 'Feature/auth/PresentationLayer/Screens/sign_up_page/SignUpPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       routes: {
-        'SignUpPage':(context)=>const SignUpPage(),
+        'sign_up_page':(context)=>const SignUpPage(),
         'SignInPage':(context)=>const SignInPage() ,
         "HomePage": (context) => HomePage(),
       },

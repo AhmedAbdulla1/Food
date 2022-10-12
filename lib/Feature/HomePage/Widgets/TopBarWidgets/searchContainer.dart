@@ -10,8 +10,8 @@ class SearchContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: GetWidthinPixels(50),
-      height: GetHeightinPixels(45),
+      width: GetWidthInPixels(50),
+      height: GetHeightInPixels(45),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: mainColor,

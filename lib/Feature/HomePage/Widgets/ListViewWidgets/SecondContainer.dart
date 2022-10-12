@@ -18,16 +18,16 @@ class SecondContainer extends StatelessWidget {
     return Container(
       width: GetWidth() -
           170, // 150 In the first container in a Row. + 20 pixels for padding.!
-      height: GetHeightinPixels(130),
+      height: GetHeightInPixels(130),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
-            topRight: Radius.circular(GetWidthinPixels(15)),
-            bottomRight: Radius.circular(GetWidthinPixels(15))),
+            topRight: Radius.circular(GetWidthInPixels(15)),
+            bottomRight: Radius.circular(GetWidthInPixels(15))),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(
-            horizontal: GetWidthinPixels(10), vertical: GetHeightinPixels(10)),
+            horizontal: GetWidthInPixels(10), vertical: GetHeightInPixels(10)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

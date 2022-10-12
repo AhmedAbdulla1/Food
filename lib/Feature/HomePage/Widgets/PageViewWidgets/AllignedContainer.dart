@@ -20,15 +20,15 @@ class AlignedContainer extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: Container(
         width: GetWidth() * .80,
-        height: GetHeightinPixels(150),
+        height: GetHeightInPixels(150),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(GetWidthinPixels(20)),
+          borderRadius: BorderRadius.circular(GetWidthInPixels(20)),
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: GetWidthinPixels(20),
-              vertical: GetHeightinPixels(20)),
+              horizontal: GetWidthInPixels(20),
+              vertical: GetHeightInPixels(20)),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,

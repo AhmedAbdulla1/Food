@@ -1,5 +1,5 @@
 
-import 'package:akl/core/constant/colors.dart' show mainBlackColor;
+import 'package:akl/core/constant/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitle extends StatelessWidget {
@@ -27,7 +27,7 @@ class CustomTitle extends StatelessWidget {
 }
 class CustomSubTitle extends StatelessWidget {
   final String text;
-  Color? color=mainBlackColor;
+  Color? color=signColor;
   double? size=50;
   CustomSubTitle(
       {super.key,
@@ -43,7 +43,7 @@ class CustomSubTitle extends StatelessWidget {
         color: color,
         fontSize: size,//Default Size is 50
         fontFamily: "Roboto",
-        fontWeight: FontWeight.bold, // Only used if needed.
+        fontWeight: FontWeight.w100, // Only used if needed.
       ),
     );
   }

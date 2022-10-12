@@ -24,8 +24,8 @@ class _ExpandableTextState extends State<ExpandableText> {
   @override
   void initState() {
     double TextHeight = widget.Height == null
-        ? GetHeightinPixels(150)
-        : GetHeightinPixels(widget.Height!);
+        ? GetHeightInPixels(150)
+        : GetHeightInPixels(widget.Height!);
 
     super.initState();
     if (widget.Text.length > TextHeight) {
@@ -48,11 +48,11 @@ class _ExpandableTextState extends State<ExpandableText> {
                 Hiddentext
                     ? Text(
                         Firsthalf + "...",
-                        style: TextStyle(fontSize: GetWidthinPixels(15)),
+                        style: TextStyle(fontSize: GetWidthInPixels(15)),
                       )
                     : Text(
                         widget.Text,
-                        style: TextStyle(fontSize: GetWidthinPixels(15)),
+                        style: TextStyle(fontSize: GetWidthInPixels(15)),
                       ),
                 InkWell(
                   onTap: () => setState(() {
@@ -64,7 +64,7 @@ class _ExpandableTextState extends State<ExpandableText> {
                       Text(
                         Hiddentext ? "Show More" : "Show less",
                         style: TextStyle(
-                          fontSize: GetWidthinPixels(15),
+                          fontSize: GetWidthInPixels(15),
                           color: mainColor,
                         ),
                       ),

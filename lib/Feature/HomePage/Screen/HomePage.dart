@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: scaffoldColor,
         body: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: GetWidthinPixels(10),
+            horizontal: GetWidthInPixels(10),
           ),
           child: SizedBox(
             height: GetHeight(),

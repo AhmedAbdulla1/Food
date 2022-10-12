@@ -1,3 +1,4 @@
+import 'package:akl/core/constant/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,9 +25,13 @@ class CustomTextFormField extends StatelessWidget {
             )
           ]),
       child: TextFormField(
+        style:const TextStyle(
+          fontSize: 25,
+        ),
         decoration: InputDecoration(
-          prefixIcon: Icon(prefixIcon),
+          prefixIcon: Icon(prefixIcon,color: mainColor,),
           hintText: hintText,
+          hintStyle: const TextStyle(fontSize: 18,),
           border: InputBorder.none,
         ),
 

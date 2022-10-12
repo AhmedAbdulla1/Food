@@ -18,9 +18,9 @@ class MainPageViewContainer extends StatelessWidget {
       ),
       child: Container(
         width: GetWidth(),
-        height: GetHeightinPixels(200),
+        height: GetHeightInPixels(200),
         margin: EdgeInsets.only(
-          right: GetWidthinPixels(5),
+          right: GetWidthInPixels(5),
         ), // Margin to disconnect page1 from page 2..
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -28,7 +28,7 @@ class MainPageViewContainer extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(
-            GetWidthinPixels(20),
+            GetWidthInPixels(20),
           ),
         ),
       ),

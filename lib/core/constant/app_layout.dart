@@ -11,12 +11,12 @@ GetWidth() {
 }
 
 // ignore: non_constant_identifier_names
-GetHeightinPixels(int pixels) {
+GetHeightInPixels(int pixels) {
   double x = GetHeight() / pixels;
   return GetHeight() / x;
 }
 
-GetWidthinPixels(int pixels) {
+GetWidthInPixels(int pixels) {
   double x = GetWidth() / pixels;
   return GetWidth() / x;
 }
