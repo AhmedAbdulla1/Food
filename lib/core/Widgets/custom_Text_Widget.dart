@@ -28,7 +28,7 @@ class CustomTitle extends StatelessWidget {
 class CustomSubTitle extends StatelessWidget {
   final String text;
   Color? color=signColor;
-  double? size=50;
+  double? size=20;
   CustomSubTitle(
       {super.key,
         required this.text,
@@ -41,9 +41,9 @@ class CustomSubTitle extends StatelessWidget {
       text, // The Text i'm going to enter to use the TextWidget!.
       style: TextStyle(
         color: color,
-        fontSize: size,//Default Size is 50
-        fontFamily: "Roboto",
-        fontWeight: FontWeight.w100, // Only used if needed.
+        fontSize: size,//Default Size is 20
+
+        fontWeight: FontWeight.w300, // Only used if needed.
       ),
     );
   }

@@ -5,14 +5,13 @@ import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
 
-import '../Widgets/ListView/ListView.dart';
-import '../Widgets/TopBarWidgets/custom_Row.dart';
-import '../Widgets/PageView/thePageView.dart';
-import '../Widgets/dots_indicator.dart';
+import 'Widgets/ListView/ListView.dart';
+import 'Widgets/TopBarWidgets/custom_Row.dart';
+import 'Widgets/PageView/thePageView.dart';
+import 'Widgets/dots_indicator.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
-  PageViewController injection = Get.put(PageViewController());
   ApiController netWorkInjection = Get.put(ApiController());
 
   @override

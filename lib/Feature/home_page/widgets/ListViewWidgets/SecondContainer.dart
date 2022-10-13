@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:akl/Feature/HomePage/Widgets/bunchOfIcons.dart';
+import 'package:akl/Feature/home_page/Widgets/bunchOfIcons.dart';
 import 'package:akl/core/Controller/Controller.dart';
 import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';

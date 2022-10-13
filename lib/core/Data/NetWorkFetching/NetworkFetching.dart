@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:akl/Feature/HomePage/Screen/HomePage.dart';
+import 'package:akl/Feature/home_page/home_page.dart';
 import 'package:akl/core/Controller/Controller.dart';
 import 'package:get/get.dart';
 

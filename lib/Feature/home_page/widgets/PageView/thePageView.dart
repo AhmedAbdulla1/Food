@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:akl/Feature/HomePage/Widgets/PageViewWidgets/AllignedContainer.dart';
-import 'package:akl/Feature/HomePage/Widgets/PageViewWidgets/mainpageviewcontainer.dart';
+import 'package:akl/Feature/home_page/Widgets/PageViewWidgets/AllignedContainer.dart';
+import 'package:akl/Feature/home_page/Widgets/PageViewWidgets/mainpageviewcontainer.dart';
 import 'package:akl/core/Controller/Controller.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:get/get.dart';

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:akl/Feature/HomePage/Widgets/PageViewWidgets/ratingFood.dart';
+import 'package:akl/Feature/home_page/Widgets/PageViewWidgets/ratingFood.dart';
 import 'package:akl/core/Controller/Controller.dart';
 import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
 import 'package:akl/core/constant/colors.dart';
 import 'package:get/get.dart';
 
-import '../../../../Feature/HomePage/Widgets/bunchOfIcons.dart';
+import '../../../../Feature/home_page/Widgets/bunchOfIcons.dart';
 
 
 class AlignedContainer extends StatelessWidget {

@@ -4,6 +4,7 @@ import 'package:akl/core/Widgets/image_logos.dart';
 import 'package:flutter/material.dart';
 import 'package:akl/core/Widgets/custom_Text_Widget.dart';
 import 'package:akl/core/constant/app_layout.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 class SignUpBody extends StatelessWidget {
@@ -46,21 +47,32 @@ class SignUpBody extends StatelessWidget {
                 },
               ),
               const SizedBox(height:10),
+              Center(
+                child: CustomSubTitle(
+                  text: 'Have an Account ?',
+                  size: 20,
+                ),
+              ),
+              const SizedBox(height:20),
+              Center(
+                child: CustomSubTitle(
+                  text: 'Sign Up using one of the following methods',
+                  size: 16,
+                ),
+              ),
+              const SizedBox(height:20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+
                 children: [
-                  CustomTitle(
-                    text: 'Have an Account ?',
-                    size: 20,
-                  ),
+                  IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.google,size: 50,color: Colors.redAccent),),
+                  const SizedBox(width: 30,),
+                  IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.twitter,size: 50,color: Colors.blue,),),
+                  const SizedBox(width: 30,),
+                  IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.facebook,size: 50,color: Colors.blue,),),
+
                 ],
-              ),
-              const SizedBox(height:20),
-              CustomTitle(
-                text: 'Sign Up using one of the following methods',
-                size: 16,
-              ),
-              const SizedBox(height:20),
+              )
             ],
           ),
     );
