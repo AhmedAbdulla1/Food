@@ -1,8 +1,8 @@
-import 'package:akl/Feature/auth/PresentationLayer/Screens/SignInPage/SignInPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Feature/HomePage/Screen/HomePage.dart';
-import 'Feature/auth/PresentationLayer/Screens/sign_up_page/SignUpPage.dart';
+import 'Feature/auth/presentation_layer/screens/sign_in_page/sign_in_page.dart';
+import 'Feature/auth/presentation_layer/screens/sign_up_page/sign_up_page.dart';
 
 void main() {
   runApp(const MyApp());
