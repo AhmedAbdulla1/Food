@@ -62,23 +62,24 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
           ),
         ),
       ),
+      
       actions: [
-        IconButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.resolveWith<Color?>(
-                  (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed)) {
-                  return Theme.of(context).colorScheme.primary.withOpacity(0.5);
-                }
-                return mainColor; // Use the component's default.
-              },
+        Container (
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: mainColor,
+            ),
+            child: IconButton(
+              // style: ButtonStyle(
+              //   backgroundColor: MaterialStatePropertyAll(mainColor),
+              //
+              // ),
+              onPressed: () {},
+              icon: const Icon(
+                Icons.search,
+              ),
             ),
           ),
-          onPressed: () {},
-          icon: const Icon(
-            Icons.search,
-          ),
-        ),
       ],
     );
   }
