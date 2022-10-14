@@ -1,6 +1,6 @@
+import 'package:akl/Feature/layout_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'Feature/home_page/home_page.dart';
 import 'Feature/auth/presentation_layer/screens/sign_in_page/sign_in_page.dart';
 import 'Feature/auth/presentation_layer/screens/sign_up_page/sign_up_page.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'sign_up_page':(context)=>const SignUpPage(),
         'SignInPage':(context)=>const SignInPage() ,
-        "HomePage": (context) => HomePage(),
+        "HomePage": (context) => const LayoutPage(),
       },
       debugShowCheckedModeBanner: false,
       initialRoute: "SignInPage",

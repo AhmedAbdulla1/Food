@@ -1,5 +1,5 @@
+import 'package:akl/Feature/layout_page.dart';
 import 'package:flutter/material.dart';
-import 'package:akl/Feature/home_page/home_page.dart';
 import 'package:akl/core/Controller/Controller.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class FetchingContent extends StatelessWidget {
             child: CircularProgressIndicator(),
           );
         } else {
-          return HomePage();
+          return LayoutPage();
         }
       },
     );
