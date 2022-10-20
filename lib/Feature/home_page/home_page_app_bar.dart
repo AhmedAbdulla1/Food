@@ -15,7 +15,8 @@ class HomePageAppBar extends StatefulWidget with PreferredSizeWidget {
 }
 
 class _HomePageAppBarState extends State<HomePageAppBar> {
-  String dropdownValue = list.first;
+  Icon customIcon = const Icon(Icons.search);
+  Widget? customSearchBar = const TitleWidget();
 
   @override
   PreferredSizeWidget build(BuildContext context) {
@@ -23,64 +24,103 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
       elevation: 0,
       backgroundColor: scaffoldColor,
       automaticallyImplyLeading: false,
-      flexibleSpace: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(
-            left: 10,
+      title: customSearchBar,
+      actions: [
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: mainColor,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomTitle(
-                text: "Egypt",
-                color: mainColor,
-                size: 28,
-              ),
-              DropdownButton<String>(
-                menuMaxHeight: 200,
-                value: dropdownValue,
-                icon: const Icon(Icons.arrow_drop_down_sharp),
-                style: const TextStyle(color: theGreyDash),
-                onChanged: (String? value) {
-                  // This is called when the user selects an item.
-                  setState(() {
-                    dropdownValue = value!;
-                  });
-                },
-                items: list
-                    .map<DropdownMenuItem<String>>(
-                      (String value) => DropdownMenuItem<String>(
-                        value: value,
-                        child: CustomSubTitle(
-                          text: value,
+          child: IconButton(
+            onPressed: () {
+              setState(() {
+                if (customIcon.icon == Icons.search) {
+                  customIcon = const Icon(Icons.cancel);
+                  customSearchBar = const ListTile(
+                    leading: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: 28,
+                    ),
+                    title: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'type in journal name...',
+                        hintStyle: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontStyle: FontStyle.italic,
                         ),
+                        border: InputBorder.none,
                       ),
-                    )
-                    .toList(),
-              ),
-            ],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  );
+                } else {
+                  customIcon = const Icon(Icons.search);
+                  customSearchBar = const TitleWidget();
+                }
+              });
+            },
+            icon: customIcon,
           ),
         ),
-      ),
-      
-      actions: [
-        Container (
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: mainColor,
-            ),
-            child: IconButton(
-              // style: ButtonStyle(
-              //   backgroundColor: MaterialStatePropertyAll(mainColor),
-              //
-              // ),
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-              ),
-            ),
-          ),
       ],
+    );
+  }
+}
+
+class TitleWidget extends StatefulWidget {
+  const TitleWidget({Key? key}) : super(key: key);
+
+  @override
+  State<TitleWidget> createState() => _TitleWidgetState();
+}
+
+class _TitleWidgetState extends State<TitleWidget> {
+  String dropdownValue = list.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.only(
+          left: 10,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CustomTitle(
+              text: "Egypt",
+              color: mainColor,
+              size: 28,
+            ),
+            DropdownButton<String>(
+              menuMaxHeight: 200,
+              value: dropdownValue,
+              icon: const Icon(Icons.arrow_drop_down_sharp),
+              style: const TextStyle(color: theGreyDash),
+              onChanged: (String? value) {
+                // This is called when the user selects an item.
+                setState(() {
+                  dropdownValue = value!;
+                });
+              },
+              items: list
+                  .map<DropdownMenuItem<String>>(
+                    (String value) => DropdownMenuItem<String>(
+                      value: value,
+                      child: CustomSubTitle(
+                        text: value,
+                      ),
+                    ),
+                  )
+                  .toList(),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

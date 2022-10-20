@@ -20,6 +20,7 @@ class _LayoutPageState extends State<LayoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.greenAccent,
       appBar: const HomePageAppBar(),
       //body: screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
